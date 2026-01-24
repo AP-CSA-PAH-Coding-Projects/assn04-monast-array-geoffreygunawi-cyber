@@ -1,1 +1,7 @@
 *Optional README file to write up your code explanation/reflection*
+
+Overall, the goal of the program is to replicate the uses of ArrayLists with only normal arrays. The ShoppingList class is the class that contains the methods that replicate that of the ArrayLists. The ShoppingItem and ShoppingCart classes are there to go along with the idea of the ShoppingList class, yet they do not relate as well with ArrayList replication.
+
+The logic of the methods in the class ShoppingList work for resizing in the way that the old array is copied to a new array with a greater or lesser length. The shifting of elements uses a loop to either move the items forward or backwards depending on which is needed. The shopping works in the way that the ShoppingItems are the objects in which go into the ShoppingLists, which represnt ArrayLists. The ShoppingCarts do not exactly represent something, but they are there to go along with the shopping idea.
+
+An issue I ran into a long the way was when I was writing the isIdentical() method, which should return a boolean on whether or not two ShoppingLists are equal. I had to write a seperate method which sorts the two arrays and trims excess objects in the array that are null. The two arrays can then be compared, and if the sorted lists are identical, isIdentical() will return true. 
